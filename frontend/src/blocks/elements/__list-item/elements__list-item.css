@@ -1,0 +1,9 @@
+.elements__list-item {
+	position: relative;
+	width: 282px;
+	height: 361px;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+  }
+  

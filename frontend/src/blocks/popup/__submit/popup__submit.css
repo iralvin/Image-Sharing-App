@@ -1,0 +1,17 @@
+.popup__submit {
+	margin-top: 24px;
+
+	max-width: 358px;
+	height: 50.15px;
+	background-color: black;
+	border: none;
+  
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+  
+	color: #ffffff;
+
+  }

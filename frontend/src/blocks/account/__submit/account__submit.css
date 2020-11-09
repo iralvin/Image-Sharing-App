@@ -1,0 +1,13 @@
+.account__submit {
+  margin: 215px 0 0 0;
+  padding: 0;
+  border: none;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}

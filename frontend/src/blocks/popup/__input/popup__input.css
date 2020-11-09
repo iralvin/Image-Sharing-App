@@ -1,0 +1,12 @@
+@import url("./_margin/_bottom-input/popup__input_margin_bottom-input.css");
+@import url("./_margin/_top-input/popup__input_margin_top-input.css");
+
+.popup__input {
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 25px;
+  }
+

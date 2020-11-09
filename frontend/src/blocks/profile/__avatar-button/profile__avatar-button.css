@@ -1,0 +1,13 @@
+.profile__avatar-button {
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  background-image: url("../../../images/large-pencil.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+}
