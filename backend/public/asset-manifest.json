@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Social-ImageSharing-App/static/css/main.6ef33d35.chunk.css",
+    "main.js": "/Social-ImageSharing-App/static/js/main.baf35184.chunk.js",
+    "main.js.map": "/Social-ImageSharing-App/static/js/main.baf35184.chunk.js.map",
+    "runtime-main.js": "/Social-ImageSharing-App/static/js/runtime-main.5f71254d.js",
+    "runtime-main.js.map": "/Social-ImageSharing-App/static/js/runtime-main.5f71254d.js.map",
+    "static/js/2.df261b23.chunk.js": "/Social-ImageSharing-App/static/js/2.df261b23.chunk.js",
+    "static/js/2.df261b23.chunk.js.map": "/Social-ImageSharing-App/static/js/2.df261b23.chunk.js.map",
+    "index.html": "/Social-ImageSharing-App/index.html",
+    "precache-manifest.ada95957cd55876bb730b83f75664cfd.js": "/Social-ImageSharing-App/precache-manifest.ada95957cd55876bb730b83f75664cfd.js",
+    "service-worker.js": "/Social-ImageSharing-App/service-worker.js",
+    "static/css/main.6ef33d35.chunk.css.map": "/Social-ImageSharing-App/static/css/main.6ef33d35.chunk.css.map",
+    "static/js/2.df261b23.chunk.js.LICENSE.txt": "/Social-ImageSharing-App/static/js/2.df261b23.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Social-ImageSharing-App/static/media/trash.9c3b03ae.svg",
+    "static/media/logo.svg": "/Social-ImageSharing-App/static/media/logo.3e6893cd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f71254d.js",
+    "static/js/2.df261b23.chunk.js",
+    "static/css/main.6ef33d35.chunk.css",
+    "static/js/main.baf35184.chunk.js"
+  ]
+}
