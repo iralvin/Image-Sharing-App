@@ -34,7 +34,7 @@ app.use(bodyParser.json());
 // app.use('/api', require('../backend'));
 
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "../frontend/build/Social-ImageSharing-App")));
 
 // app.use((req, res, next) => {
 //   req.user = {
