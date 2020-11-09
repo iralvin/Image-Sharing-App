@@ -1,9 +1,0 @@
-.account__input {
-  background-color: rgba(0, 0, 0, 0);
-  border-bottom: 2px solid #cccccc;
-  color: #ffffff;
-}
-
-.account__input::placeholder {
-  color: #cccccc;
-}
