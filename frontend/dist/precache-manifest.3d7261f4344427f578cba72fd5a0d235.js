@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "edfb337edc0e3fe68979c4ccdd566d01",
+    "revision": "12b881d8c278b660f931c89249f195a3",
     "url": "/Social-ImageSharing-App/index.html"
   },
   {
-    "revision": "0d77389dae94d87b8f96",
+    "revision": "53dbf90536554700c597",
     "url": "/Social-ImageSharing-App/static/css/main.6ef33d35.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Social-ImageSharing-App/static/js/2.df261b23.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0d77389dae94d87b8f96",
-    "url": "/Social-ImageSharing-App/static/js/main.baf35184.chunk.js"
+    "revision": "53dbf90536554700c597",
+    "url": "/Social-ImageSharing-App/static/js/main.8beaacad.chunk.js"
   },
   {
     "revision": "50b1f9da4088ce7333cb",

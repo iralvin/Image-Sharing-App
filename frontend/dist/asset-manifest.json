@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Social-ImageSharing-App/static/css/main.6ef33d35.chunk.css",
-    "main.js": "/Social-ImageSharing-App/static/js/main.baf35184.chunk.js",
-    "main.js.map": "/Social-ImageSharing-App/static/js/main.baf35184.chunk.js.map",
+    "main.js": "/Social-ImageSharing-App/static/js/main.8beaacad.chunk.js",
+    "main.js.map": "/Social-ImageSharing-App/static/js/main.8beaacad.chunk.js.map",
     "runtime-main.js": "/Social-ImageSharing-App/static/js/runtime-main.5f71254d.js",
     "runtime-main.js.map": "/Social-ImageSharing-App/static/js/runtime-main.5f71254d.js.map",
     "static/js/2.df261b23.chunk.js": "/Social-ImageSharing-App/static/js/2.df261b23.chunk.js",
     "static/js/2.df261b23.chunk.js.map": "/Social-ImageSharing-App/static/js/2.df261b23.chunk.js.map",
     "index.html": "/Social-ImageSharing-App/index.html",
-    "precache-manifest.ada95957cd55876bb730b83f75664cfd.js": "/Social-ImageSharing-App/precache-manifest.ada95957cd55876bb730b83f75664cfd.js",
+    "precache-manifest.3d7261f4344427f578cba72fd5a0d235.js": "/Social-ImageSharing-App/precache-manifest.3d7261f4344427f578cba72fd5a0d235.js",
     "service-worker.js": "/Social-ImageSharing-App/service-worker.js",
     "static/css/main.6ef33d35.chunk.css.map": "/Social-ImageSharing-App/static/css/main.6ef33d35.chunk.css.map",
     "static/js/2.df261b23.chunk.js.LICENSE.txt": "/Social-ImageSharing-App/static/js/2.df261b23.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.5f71254d.js",
     "static/js/2.df261b23.chunk.js",
     "static/css/main.6ef33d35.chunk.css",
-    "static/js/main.baf35184.chunk.js"
+    "static/js/main.8beaacad.chunk.js"
   ]
 }
