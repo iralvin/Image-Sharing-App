@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const { celebrate, Joi, errors } = require("celebrate");
 
 const { auth } = require("./middleware/auth");
@@ -28,9 +29,9 @@ mongoose.connect("mongodb://localhost:27017/aroundb", {
   useCreateIndex: true,
   useFindAndModify: false,
 });
-
+app.use(cors());
 app.use(bodyParser.json());
-app.user(cookieParser());
+app.use(cookieParser());
 
 app.use(requestLogger);
 
