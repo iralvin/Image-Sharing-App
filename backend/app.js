@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
-const path = require("path");
 const { celebrate, Joi, errors } = require("celebrate");
 
 const { auth } = require("./middleware/auth");
@@ -16,7 +16,6 @@ const {
   createUser,
   getCurrentUser,
 } = require("./controllers/usersController");
-const { join } = require("path");
 
 require("dotenv").config();
 
@@ -31,20 +30,15 @@ mongoose.connect("mongodb://localhost:27017/aroundb", {
 });
 
 app.use(bodyParser.json());
-// app.use('/api', require('../backend'));
-
-
-app.use(express.static(path.join(__dirname, "../frontend/build/Social-ImageSharing-App")));
-
-// app.use((req, res, next) => {
-//   req.user = {
-//     _id: "5f7e67f242385d085828d117",
-//   };
-
-//   next();
-// });
+app.user(cookieParser());
 
 app.use(requestLogger);
+
+app.get("/crash-test", () => {
+  setTimeout(() => {
+    throw new Error("Server will crash now");
+  }, 0);
+});
 
 app.post(
   "/signup",
@@ -69,7 +63,6 @@ app.post(
   }),
   login
 );
-// app.get("/users/me", getCurrentUser);
 
 app.use(auth);
 

@@ -26,20 +26,13 @@ const createCard = (req, res, next) => {
 
 const deleteCard = (req, res, next) => {
   const { cardId } = req.params;
-  console.log("delete card");
   Card.findOne({ _id: cardId })
     .then((card) => {
-      console.log("req.user._id", req.user._id);
-      console.log("card", card);
-      console.log("card.owner._id", card.owner._id);
-      console.log(req.user._id == card.owner._id);
       if (!card) {
         throw new NotFoundError("Failed to find card data", 404);
       }
       if (card.owner == req.user._id) {
-        console.log("card owner matches current user");
         Card.deleteOne({ _id: cardId }).then((card) => {
-          console.log("deleted card");
           return res.send({ message: "successfully deleted card" });
         });
       } else {

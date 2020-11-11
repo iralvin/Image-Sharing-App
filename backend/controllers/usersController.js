@@ -17,13 +17,10 @@ const getAllUsers = (req, res, next) => {
 
 const getSingleUser = (req, res, next) => {
   const { id } = req.params;
-  console.log("id", id);
 
   User.findOne({ _id: id })
 
     .then((user) => {
-      console.log(" user", user);
-
       if (!user) {
         throw new NotFoundError(`User ID ${id} not found`, 404);
       }
@@ -58,22 +55,21 @@ const createUser = (req, res, next) => {
 
 const login = (req, res, next) => {
   const { email, password } = req.body;
-  // User.findOne({ email })
-  //   .select("+password")
+
   return User.findUserByCredentials(email, password)
     .then((user) => {
       const { NODE_ENV, JWT_SECRET } = process.env;
-      console.log(JWT_SECRET);
 
       const token = jwt.sign(
-        // { _id: "d285e3dceed844f902650f40" },
         { _id: user._id },
         NODE_ENV === "production" ? JWT_SECRET : "dev-secret",
         { expiresIn: "7d" }
       );
 
-      console.log("token", token);
-      console.log("user", user);
+      res.cookie("jwt", token, {
+        maxAge: 3600000 * 24 * 7,
+        httpOnly: true,
+      });
 
       res.send(token);
     })
@@ -82,14 +78,12 @@ const login = (req, res, next) => {
 
 const getCurrentUser = (req, res, next) => {
   const { _id } = req.user;
-  console.log("getting current user");
-  console.log("_id", _id);
+
   User.findOne({ _id: req.user._id })
     .then((user) => {
       if (!user) {
         throw new NotFoundError("Failed to find current user", 404);
       }
-      console.log("found current user");
       return res.send(user);
     })
     .catch(next);
