@@ -29,7 +29,9 @@ mongoose.connect("mongodb://localhost:27017/aroundb", {
   useCreateIndex: true,
   useFindAndModify: false,
 });
+app.options('*', cors())
 app.use(cors());
+
 app.use(bodyParser.json());
 app.use(cookieParser());
 
