@@ -44,6 +44,7 @@ const createUser = (req, res, next) => {
         if (!user) {
           throw new NotFoundError(`Failed to create new user`, 400);
         }
+        console.log("user", user)
         res.send({ user });
       })
       .catch(next);
