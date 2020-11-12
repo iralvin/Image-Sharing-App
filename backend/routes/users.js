@@ -12,13 +12,13 @@ const {
 
 usersRouter.get(
   "/users",
-  celebrate({
-    headers: Joi.object()
-      .keys({
-        authorization: Joi.string().required(),
-      })
-      .unknown(true),
-  }),
+  // celebrate({
+  //   headers: Joi.object()
+  //     .keys({
+  //       authorization: Joi.string().required(),
+  //     })
+  //     .unknown(true),
+  // }),
   getAllUsers
 );
 
