@@ -30,15 +30,13 @@ mongoose.connect("mongodb://localhost:27017/aroundb", {
   useFindAndModify: false,
 });
 
-app.options('*', cors())
+app.options("*", cors());
 app.use(cors());
 app.all("*", function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   next();
 });
-
-
 
 app.use(bodyParser.json());
 app.use(cookieParser());
@@ -51,16 +49,15 @@ app.get("/crash-test", () => {
   }, 0);
 });
 
-
-
 app.post(
   "/signup",
-  // celebrate({
-  //   body: Joi.object().keys({
-  //     email: Joi.string().required(),
-  //     password: Joi.string().required(),
-  //   }),
-  // }),
+  celebrate({
+    body: Joi.object().keys({
+      email: Joi.string().required(),
+      password: Joi.string().required(),
+      blah: Joi.string().required(),
+    }),
+  }),
   createUser
 );
 
