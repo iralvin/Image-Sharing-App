@@ -71,7 +71,7 @@ const login = (req, res, next) => {
         httpOnly: true,
       });
 
-      res.send({token, text:"asdfasdf"});
+      res.send({text:"asdfasdf"});
     })
     .catch(next);
 };
