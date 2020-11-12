@@ -55,12 +55,12 @@ app.get("/crash-test", () => {
 
 app.post(
   "/signup",
-  celebrate({
-    body: Joi.object().keys({
-      email: Joi.string().required(),
-      password: Joi.string().required(),
-    }),
-  }),
+  // celebrate({
+  //   body: Joi.object().keys({
+  //     email: Joi.string().required(),
+  //     password: Joi.string().required(),
+  //   }),
+  // }),
   createUser
 );
 
