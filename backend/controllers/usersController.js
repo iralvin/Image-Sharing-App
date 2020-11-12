@@ -31,12 +31,15 @@ const getSingleUser = (req, res, next) => {
 };
 
 const createUser = (req, res, next) => {
-  const { email, password } = req.body;
+  const { name, about, avatar, email, password } = req.body;
   if (!email || !password) {
     throw new NotFoundError(`Email and password must not be empty`, 400);
   }
   bcrypt.hash(password, 10).then((hash) => {
     User.create({
+      name,
+      about,
+      avatar,
       email,
       password: hash,
     })
@@ -44,7 +47,6 @@ const createUser = (req, res, next) => {
         if (!user) {
           throw new NotFoundError(`Failed to create new user`, 400);
         }
-        console.log("user", user)
         res.send({ user });
       })
       .catch(next);
