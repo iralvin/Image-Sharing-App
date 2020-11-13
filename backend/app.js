@@ -71,7 +71,7 @@ app.post(
   login
 );
 
-// app.use(auth);
+app.use(auth);
 
 app.use("/", usersRouter);
 

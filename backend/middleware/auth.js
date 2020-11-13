@@ -1,6 +1,5 @@
 const jwt = require("jsonwebtoken");
 
-
 const auth = (req, res, next) => {
   const { authorization } = req.headers;
   const { NODE_ENV, JWT_SECRET } = process.env;
@@ -16,8 +15,12 @@ const auth = (req, res, next) => {
   try {
     payload = jwt.verify(token, JWT_SECRET);
   } catch (e) {
-    console.log("jwtkey", JWT_SECRET)
-    const err = new Error("Authorization requiredddd - failed to verify token" + JWT_SECRET);
+    console.log("jwtkey", JWT_SECRET);
+    const err = new Error({
+      message: "Authorization requiredddd - failed to verify token",
+      JWT_SECRET,
+      token,
+    });
     err.statusCode = 401;
     next(err);
   }
