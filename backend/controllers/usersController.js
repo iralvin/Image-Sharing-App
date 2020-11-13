@@ -71,7 +71,7 @@ const login = (req, res, next) => {
         httpOnly: true,
       });
 
-      res.send({token});
+      res.send({ token, message: "successfully created token" });
     })
     .catch(next);
 };
