@@ -13,16 +13,13 @@ const auth = (req, res, next) => {
   let payload;
 
   try {
-    payload = jwt.verify(token, JWT_SECRET);
+    payload = jwt.verify(
+      token,
+      NODE_ENV === "production" ? JWT_SECRET : "dev-secret"
+    );
   } catch (e) {
     console.log("jwtkey", JWT_SECRET);
-    const err = new Error("Authorization requiredddd - failed to verify token " + token + " " + authorization
-    //   {
-    //   message: "Authorization requiredddd - failed to verify token",
-    //   JWT_SECRET,
-    //   token,
-    // }
-    );
+    const err = new Error("Authorization requiredddd - failed to verify token");
     err.statusCode = 401;
     next(err);
   }
