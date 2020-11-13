@@ -3,6 +3,7 @@ const jwt = require("jsonwebtoken");
 
 const NotFoundError = require("../errors/not-found-err");
 const User = require("../models/user");
+const { NODE_ENV, JWT_SECRET } = process.env;
 
 const getAllUsers = (req, res, next) => {
   User.find({})
@@ -58,7 +59,6 @@ const login = (req, res, next) => {
 
   return User.findUserByCredentials(email, password)
     .then((user) => {
-      const { NODE_ENV, JWT_SECRET } = process.env;
 
       const token = jwt.sign(
         { _id: user._id },
@@ -71,7 +71,7 @@ const login = (req, res, next) => {
         httpOnly: true,
       });
 
-      res.send({ token, message: "successfully created token" });
+      res.send(token);
     })
     .catch(next);
 };
