@@ -16,7 +16,7 @@ const auth = (req, res, next) => {
     payload = jwt.verify(token, JWT_SECRET);
   } catch (e) {
     console.log("jwtkey", JWT_SECRET);
-    const err = new Error("Authorization requiredddd - failed to verify token" + token
+    const err = new Error("Authorization requiredddd - failed to verify token " + token + " " + authorization
     //   {
     //   message: "Authorization requiredddd - failed to verify token",
     //   JWT_SECRET,
