@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
@@ -18,7 +19,6 @@ const {
   getCurrentUser,
 } = require("./controllers/usersController");
 
-require("dotenv").config();
 
 const { PORT = 3000 } = process.env;
 
