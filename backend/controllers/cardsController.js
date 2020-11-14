@@ -19,7 +19,7 @@ const createCard = (req, res, next) => {
       if (!card) {
         throw new NotFoundError("Failed to find card data", 400);
       }
-      res.send({ card });
+      res.send(card);
     })
     .catch(next);
 };
