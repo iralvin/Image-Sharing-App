@@ -1,0 +1,12 @@
+.account__form {
+  display: flex;
+  flex-direction: column;
+  min-width: 358px;
+  margin: 60px auto 0;
+}
+
+@media screen and (max-width: 480px) {
+    .account__form {
+      min-width: 260px;
+    }
+  }

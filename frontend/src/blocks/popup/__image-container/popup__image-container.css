@@ -1,0 +1,15 @@
+.popup__image-container {
+  position: absolute;
+  /* max-width: 100%; */
+  max-width: 75vw;
+  max-height: 75vh;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 480px) {
+  .popup__image-container {
+    min-width: 250px;
+  }
+}

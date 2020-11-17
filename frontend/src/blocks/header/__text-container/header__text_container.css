@@ -1,0 +1,13 @@
+
+.header__text-container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .header__text-container_visible {
+    display: none;
+  }
+}

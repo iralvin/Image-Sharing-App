@@ -1,0 +1,9 @@
+.popup__input_margin_bottom-input {
+  margin-top: 13px;
+}
+
+@media screen and (max-width: 480px) {
+	.popup__input_margin_bottom-input {
+		margin-top: 20px;
+	}
+  }
