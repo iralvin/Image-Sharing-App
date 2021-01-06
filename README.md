@@ -1,10 +1,10 @@
 # Social ImageSharing App (react)
 
- Live Version: https://www.alvinw.students.nomoreparties.site/
+ Live Version: https://www.alvinw-social.students.nomoreparties.site/
 
- API: https://www.api.alvinw.students.nomoreparties.site/
+ API: https://www.api.alvinw-social.students.nomoreparties.site/
  
- IP address: 52.186.138.236
+ IP address: 34.121.116.95
 
 This repository contains the full API of "Around the U.S." project that features user authorization and user registration and handles cards and users.
 
