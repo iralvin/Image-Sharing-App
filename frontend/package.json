@@ -14,7 +14,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "npm run build && scp -r -i ../yaround_key.pem ./build/* yaround@40.76.29.46:/home/yaround/project-15/frontend" ,
+    "deploy": "npm run build && scp -r -i ../yaround_key.pem ./build/* yaround@40.76.29.46:/home/yaround/project-15/frontend",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
