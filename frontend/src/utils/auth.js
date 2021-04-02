@@ -1,4 +1,4 @@
-const baseUrl = "https://www.api.awsia.students.nomoreparties.site";
+const baseUrl = "https://api.awong-sia.students.nomoreparties.site";
 
 const register = (email, password) => {
   return fetch(`${baseUrl}/signup`, {

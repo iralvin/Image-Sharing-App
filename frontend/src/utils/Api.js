@@ -124,6 +124,6 @@ class Api {
   }
 }
 
-const api = new Api("https://www.api.awsia.students.nomoreparties.site/");
+const api = new Api("https://www.api.awong-sia.students.nomoreparties.site/");
 
 export default api;
