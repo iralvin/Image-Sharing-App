@@ -1,10 +1,8 @@
 # Social ImageSharing App (react)
 
- Live Version: 
+ Live Version: https://awong-sia.students.nomoreparties.site
 
- API: 
- 
- IP address: 
+ API: https://api.awong-sia.students.nomoreparties.site
 
 This repository contains the full API of "Around the U.S." project that features user authorization and user registration and handles cards and users.
 
